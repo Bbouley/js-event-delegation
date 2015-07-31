@@ -8,5 +8,9 @@ $(document).on('ready', function() {
       '&nbsp;<button class="btn btn-danger btn-sm">X</button></h2></li>');
   });
 
+  $('#all-todos').on('click', '.btn-danger', function(){
+    $(this).parent().parent().remove();
+  });
+
 
 });
